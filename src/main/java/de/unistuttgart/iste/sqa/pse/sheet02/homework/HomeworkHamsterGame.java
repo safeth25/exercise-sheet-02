@@ -87,7 +87,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		// Prints out the amount of grains in Paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
-		// Turn Left and move once
+		// Turn Left and move Paule once in his looking direction
 		paule.turnLeft();
 		paule.move();
 		

@@ -2,9 +2,12 @@ package de.unistuttgart.iste.sqa.pse.sheet02.homework;
 
 /**
  * Describe the class HomeworkHamsterGame here.
+ * Paule walks through the territory and picks up all grains. Then he brings all his
+ * grains in his cave and deposits them there. Everytime Paule picks up or puts down a grain
+ * the amount of grains in his mouth are being printed out. 
  * 
- * @author (Your name)
- * @version (a version number or a date)
+ * @author Mete Karakaya, Linda Riekers, Safet Hayrula
+ * @version 04.11.2021
  */
 public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 
@@ -19,7 +22,10 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		// EXERCISE 2:
 		// Help Paule to walk through the territory and to bring all the grains
 		// into his cave.
+
+		// Paule starts with 0 grains in his mouth. 
 		int grainsInMouth = 0;
+
 		// Walk to the first grain
 		paule.move();
 		paule.move();
@@ -30,19 +36,16 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		// Pick up the first grain
 		paule.pickGrain();
 
-		// Adds 1 grain to Paules mouth
+		// Adds 1 grain to Paules mouth. Paule has 1  grain now
 		grainsInMouth = grainsInMouth + 1;
 
-		// Prints out the amount of grains in paules mouth
+		// Prints out the amount of grains in Paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grain in mouth.");
 		
-		
-
 		// Turn in the direction of the second grain
 		paule.turnLeft();
 		paule.turnLeft();
 		paule.turnLeft();
-
 
 		// Move to the second grain
 		paule.move();
@@ -51,29 +54,26 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		paule.move();
 		paule.move();
 
-		// Pick up the second grain
+		// Pick up the second grain.
 		paule.pickGrain();
 		
-		// Adds 1 grain to Paules mouth
+		// Adds 1 grain to Paules mouth. Paule has 2 grains now
 		grainsInMouth = grainsInMouth + 1;
 
-		// Prints out the amount of grains in paules mouth
+		// Prints out the amount of grains in Paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");	
-
-		// Add further steps (comment + code) to collect all grains!
 		
 		// Turn in opposite direction
 		paule.turnLeft();
 		paule.turnLeft();
 
-		// Move till horizontally to third grain
+		// Move til horizontally to third grain
 		paule.move();
 		paule.move();
 		paule.move();
-		// Turn left in third grain direction
-		paule.turnLeft();
 
-		// Move to the third grain
+		// Turn and move to the third grain
+		paule.turnLeft();
 		paule.move();
 		paule.move();
 		paule.move();
@@ -81,13 +81,13 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		// Pick up the third grain
 		paule.pickGrain();
 
-		// Adds 1 grain to Paules mouth
+		// Adds 1 grain to Paules mouth. Paule has 3 grains now
 		grainsInMouth = grainsInMouth + 1;
 
-		// Prints out the amount of grains in paules mouth
+		// Prints out the amount of grains in Paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
-		// Turn Left and move
+		// Turn Left and move once
 		paule.turnLeft();
 		paule.move();
 		
@@ -103,7 +103,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		// Pick up the fourth grain
 		paule.pickGrain();
 
-		// Adds 1 grain to Paules mouth
+		// Adds 1 grain to Paules mouth. Paule has 4  grains now
 		grainsInMouth = grainsInMouth + 1;
 
 		// Prints out the amount of grains in paules mouth
@@ -113,7 +113,7 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		paule.turnLeft();
 		paule.turnLeft();
 
-		// Move 
+		// Move in cave direction
 		paule.move();
 		paule.move();
 		paule.move();
@@ -122,7 +122,8 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		paule.turnLeft();
 		paule.turnLeft();
 		paule.turnLeft();
-		// Move
+
+		// Move to cave direction
 		paule.move();
 		paule.move();
 
@@ -136,90 +137,72 @@ public class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		paule.move();
 		paule.move();
 
-		// Pick up grains in the cave and print out the amount of grains in paules mouth
+		// Each time Paule picks up a grain, print the amout of grains in Paules mouth
 		paule.pickGrain();
 
-		// Adds 1 grain to Paules mouth
-		grainsInMouth = grainsInMouth + 1;
-
-		// Prints out the amount of grains in paules mouth
+		// Paule has 5  grains now
+		grainsInMouth = grainsInMouth + 1; 
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
 		// Pick up  a grain
 		paule.pickGrain();
-
-		// Adds 1 grain to Paules mouth
+		// Paule has 6  grains now
 		grainsInMouth = grainsInMouth + 1;
-
-		// Prints out the amount of grains in paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");	
 
 		// Pick up a grain
 		paule.pickGrain();
-
-		// Adds 1 grain to Paules mouth
+		// Paule has 7  grains now
 		grainsInMouth = grainsInMouth + 1;
-
-		// Prints out the amount of grains in paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
-		// Put down all grains in the cave and print out the amount of grains in paules mouth
+		// Each time Paule puts down a grain, print the amout of grains left in Paules mouth
 		paule.putGrain();
 
-		// Removes 1 grain from Paules mouth
+		// Paule has 6 grains now
 		grainsInMouth = grainsInMouth - 1;
-
-		// Prints out the amount of grains in paules mouth
-		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
-		paule.putGrain();
-
-		// Removes 1 grain from Paules mouth
-		grainsInMouth = grainsInMouth - 1;
-
-		// Prints out the amount of grains in paules mouth
-		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
-
-		paule.putGrain();
-
-		// Removes 1 grain from Paules mouth
-		grainsInMouth = grainsInMouth - 1;
-
-		// Prints out the amount of grains in paules mouth
-		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
-
-		paule.putGrain();
-
-		// Removes 1 grain from Paules mouth
-		grainsInMouth = grainsInMouth - 1;
-
-		// Prints out the amount of grains in paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
 		// Put down a grain
 		paule.putGrain();
 
-		// Removes 1 grain from Paules mouth
+		// Paule has 5 grains now
 		grainsInMouth = grainsInMouth - 1;
-
-		// Prints out the amount of grains in paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
 		// Put down a grain
 		paule.putGrain();
 
-		// Removes 1 grain from Paules mouth
+		// Paule has 4 grains now
 		grainsInMouth = grainsInMouth - 1;
+		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 
-		// Prints out the amount of grains in paules mouth
+		// Put down a grain
+		paule.putGrain();
+
+		// Paule has 3 grains now
+		grainsInMouth = grainsInMouth - 1;
+		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
+
+		// Put down a grain
+		paule.putGrain();
+
+		// Now Paule has 2 grains now
+		grainsInMouth = grainsInMouth - 1;
+		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
+
+		// Put down a grain
+		paule.putGrain();
+
+		// Now Paule has 1 grain
+		grainsInMouth = grainsInMouth - 1;
 		paule.write("Paule has now " + grainsInMouth + " grain in mouth.");
 
 		// Put down a grain
 		paule.putGrain();
 
-		// Removes 1 grain from Paules mouth
+		// Now Paule has 0 grains
 		grainsInMouth = grainsInMouth - 1;
-
-		// Prints out the amount of grains in paules mouth
 		paule.write("Paule has now " + grainsInMouth + " grains in mouth.");
 		
 	}
